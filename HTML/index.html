@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Finanças</title>
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body>
+    <header class="roxo p-3">
+        <nav>
+            <div class="container d-flex">
+                <a href="#">
+                    <img src="../IMG/logo.png" alt="">
+                </a>
+                <div class="">
+                    <ul class="navegacao d-flex">
+                        <li class="mr-4">
+                            <a class="ativo" href="index.html">Cadastro</a>
+                        </li>
+                        <li>
+                            <a href="consulta.html">Consulta</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+    </header>
+    <main class="p-5">
+        <div>
+            <h1>Cadastro de Despesa</h1>
+        </div>
+        <div class="d-flex mt-5">
+            <input class="form-control mr-5" type="date" id="data">
+            <select class="form-control mr-5" id="tipo">
+                <option value = "" selected>Tipo</option>
+                <option value="alimentacao">Alimentação</option>
+                <option value="educacao">Educação</option>
+                <option value="lazer">Lazer</option>
+                <option value="saude">Saúde</option>
+                <option value="transporte">Transporte</option>
+            </select>
+            <input class="form-control mr-5" type="text" id="descricao" placeholder="Descrição">
+            <input class="form-control mr-5" type="text" id="valor" placeholder="Valor">
+            <button type="button" class="btn roxo adicionar" onclick="cadastrarDespesa()">
+                <h6  class="adicionar">+</h6>                        
+            </button>
+        </div>
+    </main>
+</body>
+<script src="../JS/app.js"></script>
+</html>
