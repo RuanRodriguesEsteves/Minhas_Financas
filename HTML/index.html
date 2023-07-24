@@ -6,6 +6,7 @@
     <title>Minhas Finanças</title>
     <link rel="stylesheet" href="../CSS/bootstrap.min.css">
     <link rel="stylesheet" href="../CSS/styles.css">
+    <script src="../JS/app.js"></script>
 </head>
 <body>
     <header class="roxo p-3">
@@ -36,19 +37,18 @@
             <input class="form-control mr-5" type="date" id="data">
             <select class="form-control mr-5" id="tipo">
                 <option value = "" selected>Tipo</option>
-                <option value="alimentacao">Alimentação</option>
-                <option value="educacao">Educação</option>
-                <option value="lazer">Lazer</option>
-                <option value="saude">Saúde</option>
-                <option value="transporte">Transporte</option>
+                <option value="Alimentação">Alimentação</option>
+                <option value="Educação">Educação</option>
+                <option value="Lazer">Lazer</option>
+                <option value="Saúde">Saúde</option>
+                <option value="Transporte">Transporte</option>
             </select>
             <input class="form-control mr-5" type="text" id="descricao" placeholder="Descrição">
-            <input class="form-control mr-5" type="text" id="valor" placeholder="Valor">
-            <button type="button" class="btn roxo adicionar" onclick="cadastrarDespesa()">
-                <h6  class="adicionar">+</h6>                        
+            <input class="form-control mr-5" type="number" id="valor" placeholder="Valor">
+            <button type="button" class="btn roxo" onclick="cadastrarDespesa()">
+                <h6  class="icone">+</h6>                        
             </button>
         </div>
     </main>
 </body>
-<script src="../JS/app.js"></script>
 </html>
